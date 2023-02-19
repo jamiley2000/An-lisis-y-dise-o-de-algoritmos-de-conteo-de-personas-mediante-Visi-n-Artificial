@@ -111,7 +111,7 @@ public:
 		else return false;
 	}
 
-	void añadirframe() {
+	void aÃ±adirframe() {
 		this->frame += 1;
 		if (this->frame > this->max_frame) {
 			this->Finalizado = true;
@@ -200,7 +200,7 @@ int main() {
 		//GaussianBlur(Frame1, Frame1, Size(3, 3), 0);
 
 		for (int i = 0; i < Personas.size(); i++) {
-			Personas[i].añadirframe();
+			Personas[i].aÃ±adirframe();
 		}
 		subtractor->apply(Frame1, Frame2);
 
