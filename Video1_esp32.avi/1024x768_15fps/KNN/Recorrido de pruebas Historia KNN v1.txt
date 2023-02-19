@@ -1,0 +1,74 @@
+-Se ha cambiado la clase para que coja las 2 últimas posiciones
+-Se ha cambiado el KNN para que haya menos historia (50), más distancia umbral (1000) y detección de sombras (true)
+-Se ha intercambiado el dilate y el erode con 2 iteraciones por la apertura y el cierre (kernel 3 y 11 respectivamente)
+-Se ha cambiado el punto de cruce en el centro de la imagen
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 27 | Personas contadas que entrado = 16 | Personas contadas que han salido = 11
+Eficacia total = 84 % | Eficacia entrando = 88 % | Eficacia saliendo = 78 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 174099 milisegundos | Tiempo medio de procesamiento por cada frame: 204 milisegundos | Inicialización media: 169 milisegundos | Preprocesamiento medio: 2.83 milisegundos | Sustraccion de fondo medio: 75 milisegundos | Transformaciones Morfologicas media: 95 milisegundos | Calculo de contornos medio: 6 milisegundos | Algoritmo de conteo medio: 0.271 milisegundos | Posprocesamiento medio: 22 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+-Se ha intercambiado la apertura y el cierre por el dilate y el erode con 2 iteraciones (kernel 3 y 11 respectivamente)
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 25 | Personas contadas que entrado = 13 | Personas contadas que han salido = 12
+Eficacia total = 78 % | Eficacia entrando = 72 % | Eficacia saliendo = 85 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 166247 milisegundos | Tiempo medio de procesamiento por cada frame: 195 milisegundos | Inicialización media: 170 milisegundos | Preprocesamiento medio: 2.79 milisegundos | Sustraccion de fondo medio: 74 milisegundos | Transformaciones Morfologicas media: 87 milisegundos | Calculo de contornos medio: 6 milisegundos | Algoritmo de conteo medio: 0.238 milisegundos | Posprocesamiento medio: 22 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se comprueba que la apertura y el cierre generan una mayor eficacia, pese a tardar 8 milisegundos más de media)
+A partir de ahora se hace con el cierre y la apertura.
+
+-Se ha cambiado la clase para que coja las 3 últimas posiciones
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 27 | Personas contadas que entrado = 16 | Personas contadas que han salido = 11
+Eficacia total = 84 % | Eficacia entrando = 88 % | Eficacia saliendo = 78 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 135182 milisegundos | Tiempo medio de procesamiento por cada frame: 158 milisegundos | Inicialización media: 161 milisegundos | Preprocesamiento medio: 2.58 milisegundos | Sustraccion de fondo medio: 57 milisegundos | Transformaciones Morfologicas media: 73 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.22 milisegundos | Posprocesamiento medio: 17 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(No se aprecia nungún cambio en la eficacia, se aprecia un cambio en los tiempo de procesamiento probablemente por haber conectado el cargador del ordenador)
+Por ahora lo dejo en las últimas 3 posiciones
+
+-Se ha añadido un poco de historia (150) al KNN para que no calcule como fondo a Bernardo que está parado en medio de la imagen unos segundos
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 21 | Personas contadas que entrado = 10 | Personas contadas que han salido = 11
+Eficacia total = 65 % | Eficacia entrando = 55 % | Eficacia saliendo = 78 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 132107 milisegundos | Tiempo medio de procesamiento por cada frame: 155 milisegundos | Inicialización media: 109 milisegundos | Preprocesamiento medio: 2.4 milisegundos | Sustraccion de fondo medio: 55 milisegundos | Transformaciones Morfologicas media: 72 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.229 milisegundos | Posprocesamiento medio: 17 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se aprecia una disminución de eficacia notable)
+
+-Se ha añadido un poco de historia (100) al KNN
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 23 | Personas contadas que entrado = 13 | Personas contadas que han salido = 10
+Eficacia total = 71 % | Eficacia entrando = 72 % | Eficacia saliendo = 71 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 136302 milisegundos | Tiempo medio de procesamiento por cada frame: 160 milisegundos | Inicialización media: 99 milisegundos | Preprocesamiento medio: 2.61 milisegundos | Sustraccion de fondo medio: 55 milisegundos | Transformaciones Morfologicas media: 76 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.241 milisegundos | Posprocesamiento medio: 18 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se comprueba cómo la eficacia aumenta en proporción inversa a la historia, es decir, cuanta menos historia más eficacia)
+
+-Se reduce un poco de historia (25) al KNN
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 25 | Personas contadas que entrado = 15 | Personas contadas que han salido = 10
+Eficacia total = 78 % | Eficacia entrando = 83 % | Eficacia saliendo = 71 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 144734 milisegundos | Tiempo medio de procesamiento por cada frame: 169 milisegundos | Inicialización media: 91 milisegundos | Preprocesamiento medio: 2.36 milisegundos | Sustraccion de fondo medio: 73 milisegundos | Transformaciones Morfologicas media: 70 milisegundos | Calculo de contornos medio: 4 milisegundos | Algoritmo de conteo medio: 0.197 milisegundos | Posprocesamiento medio: 16 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se ha reducido la eficacia)
+
+-Se reduce un poco de historia (40) al KNN
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 23 | Personas contadas que entrado = 13 | Personas contadas que han salido = 10
+Eficacia total = 71 % | Eficacia entrando = 72 % | Eficacia saliendo = 71 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 140490 milisegundos | Tiempo medio de procesamiento por cada frame: 164 milisegundos | Inicialización media: 126 milisegundos | Preprocesamiento medio: 2.62 milisegundos | Sustraccion de fondo medio: 66 milisegundos | Transformaciones Morfologicas media: 72 milisegundos | Calculo de contornos medio: 4 milisegundos | Algoritmo de conteo medio: 0.211 milisegundos | Posprocesamiento medio: 17 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se comprueba que la eficacia es mayor cuanto menos es, pero es circunstancial)
+Se mantienen 50 de historia
+

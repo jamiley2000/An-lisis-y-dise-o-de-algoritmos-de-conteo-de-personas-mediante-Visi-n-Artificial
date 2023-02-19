@@ -1,0 +1,24 @@
+Partimos desde:
+-Un GaussianBlur a la diferencia (5x5)
+-threshold de 20
+-Apertura y cierra como en el KNN
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 17 | Personas contadas que entrado = 14 | Personas contadas que han salido = 3
+Eficacia total = 53 % | Eficacia entrando = 77 % | Eficacia saliendo = 21 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 844 | Tiempo total desde el inicio: 71566 milisegundos | Tiempo medio de procesamiento por cada frame: 84 milisegundos | Inicialización media: 64 milisegundos | Preprocesamiento medio: 27.9 milisegundos | Sustraccion de fondo medio: 0 milisegundos | Transformaciones Morfologicas media: 41 milisegundos | Calculo de contornos medio: 2 milisegundos | Algoritmo de conteo medio: 0.152 milisegundos | Posprocesamiento medio: 10 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se puede comprobar un 77% de eficacia entrando)
+
+-Se prueba a añadir canny
+-Se sustituye la apertura y el cierre por un dilate único
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 21 | Personas contadas que entrado = 14 | Personas contadas que han salido = 7
+Eficacia total = 65 % | Eficacia entrando = 77 % | Eficacia saliendo = 50 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 844 | Tiempo total desde el inicio: 82375 milisegundos | Tiempo medio de procesamiento por cada frame: 96 milisegundos | Inicialización media: 39 milisegundos | Preprocesamiento medio: 26.5 milisegundos | Sustraccion de fondo medio: 0 milisegundos | Transformaciones Morfologicas media: 55 milisegundos | Calculo de contornos medio: 3 milisegundos | Algoritmo de conteo medio: 0.201 milisegundos | Posprocesamiento medio: 10 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Aumento de la eficacia con el canny, pero el problema sigue siendo la salida.
+Hay muy pocos frames, ya que se dividen en 2, no creo que sea viable este método)

@@ -1,0 +1,59 @@
+Se parte desde el mismo programa de KNN, pero con algún cambio:
+-Se ha cambiado la historia (200)
+-Se ha cambiado el umbral de intensidad (50)
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 23 | Personas contadas que entrado = 13 | Personas contadas que han salido = 10
+Eficacia total = 71 % | Eficacia entrando = 72 % | Eficacia saliendo = 71 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 121195 milisegundos | Tiempo medio de procesamiento por cada frame: 142 milisegundos | Inicialización media: 70 milisegundos | Preprocesamiento medio: 2.78 milisegundos | Sustraccion de fondo medio: 38 milisegundos | Transformaciones Morfologicas media: 76 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.262 milisegundos | Posprocesamiento medio: 17 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se observa una eficacia similar en la entrada y en la salida, y una mejoría de tiempo de procesamiento con respecto al KNN)
+
+-Se reduce la historia (50)
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 25 | Personas contadas que entrado = 14 | Personas contadas que han salido = 11
+Eficacia total = 78 % | Eficacia entrando = 77 % | Eficacia saliendo = 78 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 117080 milisegundos | Tiempo medio de procesamiento por cada frame: 137 milisegundos | Inicialización media: 85 milisegundos | Preprocesamiento medio: 2.74 milisegundos | Sustraccion de fondo medio: 36 milisegundos | Transformaciones Morfologicas media: 74 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.179 milisegundos | Posprocesamiento medio: 17 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se comprueba un aumento de eficacia)
+
+-Se mantiene la historia en 50, igual que en KNN
+-Se cambia el umbral de intensidad (25)
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 25 | Personas contadas que entrado = 13 | Personas contadas que han salido = 12
+Eficacia total = 78 % | Eficacia entrando = 72 % | Eficacia saliendo = 85 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 121488 milisegundos | Tiempo medio de procesamiento por cada frame: 142 milisegundos | Inicialización media: 88 milisegundos | Preprocesamiento medio: 2.74 milisegundos | Sustraccion de fondo medio: 38 milisegundos | Transformaciones Morfologicas media: 76 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.22 milisegundos | Posprocesamiento medio: 18 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Aumenta el porcentaje saliendo, pero disminuye el entrando)
+
+-Se aumenta el umbral (60)
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 25 | Personas contadas que entrado = 15 | Personas contadas que han salido = 10
+Eficacia total = 78 % | Eficacia entrando = 83 % | Eficacia saliendo = 71 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 159072 milisegundos | Tiempo medio de procesamiento por cada frame: 186 milisegundos | Inicialización media: 237 milisegundos | Preprocesamiento medio: 3.02 milisegundos | Sustraccion de fondo medio: 52 milisegundos | Transformaciones Morfologicas media: 99 milisegundos | Calculo de contornos medio: 7 milisegundos | Algoritmo de conteo medio: 0.23 milisegundos | Posprocesamiento medio: 23 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Aumenta el porcentaje entrando, pero disminuye el saliendo)
+Se mantiene en 50 como punto intermedio
+
+-Se ha añadido un GaussianBlur después del MOG2
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 26 | Personas contadas que entrado = 15 | Personas contadas que han salido = 11
+Eficacia total = 81 % | Eficacia entrando = 83 % | Eficacia saliendo = 78 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 161520 milisegundos | Tiempo medio de procesamiento por cada frame: 190 milisegundos | Inicialización media: 115 milisegundos | Preprocesamiento medio: 2.69 milisegundos | Sustraccion de fondo medio: 41 milisegundos | Transformaciones Morfologicas media: 118 milisegundos | Calculo de contornos medio: 5 milisegundos | Algoritmo de conteo medio: 0.183 milisegundos | Posprocesamiento medio: 19 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Aumentan las precisión con el blur)
+-Se mantiene el blur
+
+
+
+
+

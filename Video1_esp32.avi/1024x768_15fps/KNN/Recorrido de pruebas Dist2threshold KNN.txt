@@ -1,0 +1,12 @@
+Se parte de que la historia es 50
+
+-Se ha cambiado la distancia umbral por 800
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 23 | Personas contadas que entrado = 14 | Personas contadas que han salido = 9
+Eficacia total = 71 % | Eficacia entrando = 77 % | Eficacia saliendo = 64 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 845 | Tiempo total desde el inicio: 187171 milisegundos | Tiempo medio de procesamiento por cada frame: 220 milisegundos | Inicialización media: 232 milisegundos | Preprocesamiento medio: 3.03 milisegundos | Sustraccion de fondo medio: 81 milisegundos | Transformaciones Morfologicas media: 101 milisegundos | Calculo de contornos medio: 7 milisegundos | Algoritmo de conteo medio: 0.305 milisegundos | Posprocesamiento medio: 24 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(Se decide probar otro método de sustracción de fondo)
+

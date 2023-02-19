@@ -1,0 +1,29 @@
+La persona 1 entra a los 13 segundos
+La persona 2 entra a los 19 segundos
+La persona 4 entra a los 29 segundos
+La persona 6 entra a los 32 segundos
+La persona 8 entra a los 33 segundos
+La persona 10 entra a los 39 segundos
+La persona 13 entra a los 46 segundos
+La persona 15 entra a los 53 segundos
+La persona 21 entra a los 60 segundos
+La persona 20 entra a los 61 segundos
+La persona 23 sale a los 79 segundos
+La persona 26 entra a los 82 segundos
+La persona 33 sale a los 110 segundos
+La persona 34 sale a los 115 segundos
+La persona 38 sale a los 118 segundos
+La persona 41 sale a los 119 segundos
+La persona 40 sale a los 122 segundos
+La persona 43 entra a los 129 segundos
+La persona 46 entra a los 129 segundos
+La persona 45 entra a los 130 segundos
+La persona 52 sale a los 139 segundos
+La persona 55 sale a los 141 segundos
+La persona 57 sale a los 144 segundos
+La persona 59 sale a los 148 segundos
+La persona 66 sale a los 156 segundos
+La persona 68 entra a los 159 segundos
+Numero real de personas que han pasado por pantalla = 32 | Personas reales que han entrado = 18 | Personas reales que han salido = 14
+Numero total de personas que han pasado por pantalla = 26 | Personas contadas que entrado = 15 | Personas contadas que han salido = 11
+Eficacia total = 81 % | Eficacia entrando = 83 % | Eficacia saliendo = 78 % |
