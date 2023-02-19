@@ -1,0 +1,11 @@
+La persona 2 sale a los 7 segundos
+La persona 3 sale a los 10 segundos
+La persona 4 entra a los 12 segundos
+La persona 6 sale a los 14 segundos
+La persona 8 entra a los 15 segundos
+La persona 7 entra a los 15 segundos
+La persona 9 sale a los 18 segundos
+La persona 10 sale a los 18 segundos
+Numero real de personas que han pasado por pantalla = 8 | Personas reales que han entrado = 3 | Personas reales que han salido = 5
+Numero total de personas que han pasado por pantalla = 8 | Personas contadas que entrado = 3 | Personas contadas que han salido = 5
+Eficacia total = 100 % | Eficacia entrando = 100 % | Eficacia saliendo = 100 % |

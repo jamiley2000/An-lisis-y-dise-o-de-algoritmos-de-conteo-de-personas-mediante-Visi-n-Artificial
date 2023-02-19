@@ -1,0 +1,12 @@
+-Se parte del mismo algoritmo KNN, pero intercambiando la función KNN por MOG2, cambiando sus parámetros por defecto
+
+----------------------------------------------------------------------------------------------------------------------------
+Numero total de personas que han pasado por pantalla = 8 | Personas contadas que entrado = 3 | Personas contadas que han salido = 5
+Eficacia total = 100 % | Eficacia entrando = 100 % | Eficacia saliendo = 100 % |
+----------------------------------------------------------------------------------------------------------------------------
+Frames totales: 276 | Tiempo total desde el inicio: 21200 milisegundos | Tiempo medio de procesamiento por cada frame: 75 milisegundos | Inicialización media: 78 milisegundos | Preprocesamiento medio: 0.957 milisegundos | Sustraccion de fondo medio: 17 milisegundos | Transformaciones Morfologicas media: 41 milisegundos | Calculo de contornos medio: 2 milisegundos | Algoritmo de conteo medio: 0.88 milisegundos | Posprocesamiento medio: 10 milisegundos |
+----------------------------------------------------------------------------------------------------------------------------
+
+(No se ha necesitado ningún cambio para que la eficiencia sea del 100%, tiempos de procesamiento muy parecidos al de KNN)
+
+
